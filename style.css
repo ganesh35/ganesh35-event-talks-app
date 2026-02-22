@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+.search-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#category-search {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.schedule-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.talk-card, .break-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.talk-card h2, .break-card h2 {
+    color: #0056b3;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.talk-card h3 {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.talk-card .time, .break-card .time {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.talk-card .speakers {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.talk-card .categories span {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.talk-card .description {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.break-card {
+    background-color: #e0f7fa; /* Light blue for breaks */
+    text-align: center;
+    border-color: #b2ebf2;
+}
+
+.break-card h2 {
+    color: #00838f;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .schedule-section {
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+}
